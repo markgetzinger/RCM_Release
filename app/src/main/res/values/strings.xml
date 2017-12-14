@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Room-Checkmate</string>
+    <string name="login_button">Login</string>
+    <string-array name="location">
+        <item>on-Campus</item>
+        <item>Private</item>
+    </string-array>
+    <string-array name="prefPrank">
+        <item>Cleanliness</item>
+        <item>Active Hours</item>
+        <item>Sociability</item>
+        <item>Sound Levels</item>
+    </string-array>
+    <string-array name="rankValue">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="cleanLevel">
+        <item>very clean</item>
+        <item>clean</item>
+        <item>average</item>
+        <item>dirty</item>
+        <item>very dirty</item>
+    </string-array>
+    <string-array name="soundLevel">
+        <item>very quiet</item>
+        <item>quiet</item>
+        <item>average</item>
+        <item>loud</item>
+        <item>very loud</item>
+    </string-array>
+    <string-array name="socialLevel">
+        <item>very social</item>
+        <item>social</item>
+        <item>average</item>
+        <item>reserved</item>
+        <item>antisocial</item>
+    </string-array>
+    <string-array name="timeLevel">
+        <item>very early</item>
+        <item>early</item>
+        <item>average</item>
+        <item>late</item>
+        <item>very late</item>
+    </string-array>
+
+</resources>

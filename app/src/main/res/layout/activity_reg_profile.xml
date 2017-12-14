@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.potato.room_checkmate.RegProfile">
+    <!--
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:onClick="Reg2Back"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            android:layout_marginBottom="613dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" />
+    -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:isScrollContainer="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Please Input Personal Information" />
+
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/regAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/regCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="City"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/regState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="State"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/regZip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Zip"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/regPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Phone Number (Optional)"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\nPlease input your tendencies\n"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="On a scale of 1-5 rate yourself in the following fields\n" />
+
+            <TextView
+                android:id="@+id/cleanPrank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Cleanliness - 1" />
+
+            <SeekBar
+                android:id="@+id/cleanBar"
+                android:max="4"
+                android:scrollbarSize="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
+                />
+
+            <TextView
+                android:id="@+id/timePrank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="\n\nHours of Activiy - 1" />
+
+            <SeekBar
+                android:id="@+id/timeBar"
+                android:max="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
+                />
+
+            <TextView
+                android:id="@+id/socialPrank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="\n\nSociability - 1" />
+
+            <SeekBar
+                android:id="@+id/socialBar"
+                android:max="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
+                />
+
+            <TextView
+                android:id="@+id/soundPrank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="\n\nSound Levels - 1" />
+
+            <SeekBar
+                android:id="@+id/soundBar"
+                android:max="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
+                />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="\n\nOrder the attrbutes from most important to least" />
+
+            <Spinner
+                android:id="@+id/firstPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/secondPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/thirdPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/fourthPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/profileErrors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="\n\n" />
+
+            <Button
+                android:id="@+id/finish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Reg2Fin"
+                android:text="Finish"
+                tools:layout_editor_absoluteX="161dp"
+                tools:layout_editor_absoluteY="595dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
