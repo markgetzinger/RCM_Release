@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context="com.example.potato.room_checkmate.RegLand">
 
     <!-- <Button
@@ -61,6 +62,8 @@
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:hint="Desired Username"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -70,6 +73,8 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="Email"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -79,6 +84,8 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="Password"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPassword" />
 
             <EditText
@@ -88,6 +95,8 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="Retype Password"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPassword" />
 
             <Button

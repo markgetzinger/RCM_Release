@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context="com.example.potato.room_checkmate.RegProfile">
     <!--
         <Button
@@ -41,7 +42,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
-                android:text="Please Input Personal Information" />
+                android:text="Please Input Personal Information"
+                android:textColor="@color/fontColor"/>
 
             <EditText
                 android:id="@+id/firstName"
@@ -49,6 +51,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="First Name"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -57,6 +61,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Last Name"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -65,6 +71,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Address"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -73,6 +81,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="City"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -81,6 +91,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="State"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -89,6 +101,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Zip"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -97,6 +111,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Phone Number (Optional)"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPersonName" />
 
             <TextView
@@ -104,6 +120,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="\nPlease input your tendencies\n"
+                android:textColor="@color/fontColor"
                 android:textSize="30sp" />
 
             <TextView
@@ -111,6 +128,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
+                android:textColor="@color/fontColor"
                 android:text="On a scale of 1-5 rate yourself in the following fields\n" />
 
             <TextView
@@ -118,7 +136,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:text="Cleanliness - 1" />
+                android:text="Cleanliness - 1"
+                android:textColor="@color/fontColor"/>
 
             <SeekBar
                 android:id="@+id/cleanBar"
@@ -134,7 +153,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:text="\n\nHours of Activiy - 1" />
+                android:text="\n\nHours of Activity - 1"
+                android:textColor="@color/fontColor"/>
 
             <SeekBar
                 android:id="@+id/timeBar"
@@ -149,7 +169,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:text="\n\nSociability - 1" />
+                android:text="\n\nSociability - 1"
+                android:textColor="@color/fontColor"/>
 
             <SeekBar
                 android:id="@+id/socialBar"
@@ -164,7 +185,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:text="\n\nSound Levels - 1" />
+                android:text="\n\nSound Levels - 1"
+                android:textColor="@color/fontColor"/>
 
             <SeekBar
                 android:id="@+id/soundBar"
@@ -179,24 +201,53 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:text="\n\nOrder the attrbutes from most important to least" />
+                android:text="\n\nOrder the attributes from most important to least"
+                android:textColor="@color/fontColor"/>
 
             <Spinner
                 android:id="@+id/firstPlace"
                 android:layout_width="match_parent"
+                android:background="@color/boxBack"
                 android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/spacer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="5sp"
+                android:text=" "/>
             <Spinner
                 android:id="@+id/secondPlace"
                 android:layout_width="match_parent"
+                android:background="@color/boxBack"
                 android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/spacer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="5sp"
+                android:text=" "/>
             <Spinner
                 android:id="@+id/thirdPlace"
                 android:layout_width="match_parent"
+                android:background="@color/boxBack"
                 android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/spacer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="5sp"
+                android:text=" "/>
             <Spinner
                 android:id="@+id/fourthPlace"
                 android:layout_width="match_parent"
+                android:background="@color/boxBack"
                 android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/spacer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="5sp"
+                android:text=" "/>
             <TextView
                 android:id="@+id/profileErrors"
                 android:layout_width="match_parent"

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context="com.example.potato.room_checkmate.UpdateProfile">
     <ScrollView
         android:layout_width="fill_parent"
@@ -24,153 +25,227 @@
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Please Input Personal Information" />
+                android:textSize="30sp"
+                android:text="Please Input Personal Information"
+                android:textColor="@color/fontColor"/>
 
             <EditText
-                android:id="@+id/UpdateName"
+                android:id="@+id/firstName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="First Name"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/updateLast"
+                android:id="@+id/lastName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Last Name"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/updateAddress"
+                android:id="@+id/regAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Address"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/updateCity"
+                android:id="@+id/regCity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="City"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/updateState"
+                android:id="@+id/regState"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="State"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/updateZip"
+                android:id="@+id/regZip"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Zip"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText14"
+                android:id="@+id/regPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Phone Number (Optional)"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/fontColor"
                 android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Please input your tendencies\n"
-                android:textSize="30sp"/>
+                android:text="\nPlease input your tendencies\n"
+                android:textColor="@color/fontColor"
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/textView12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="On a scale of 1-5 rate yourself in their feilds\n\n" />
+                android:textSize="20sp"
+                android:textColor="@color/fontColor"
+                android:text="On a scale of 1-5 rate yourself in the following fields\n" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/cleanPrank"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Cleanliness" />
+                android:textSize="18sp"
+                android:text="Cleanliness - 1"
+                android:textColor="@color/fontColor"/>
 
-            <RatingBar
-                android:id="@+id/ratingBar"
+            <SeekBar
+                android:id="@+id/cleanBar"
+                android:max="4"
+                android:scrollbarSize="10sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
                 />
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/timePrank"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hours of Activiy" />
+                android:textSize="18sp"
+                android:text="\n\nHours of Activity - 1"
+                android:textColor="@color/fontColor"/>
 
-            <RatingBar
-                android:id="@+id/ratingBar2"
+            <SeekBar
+                android:id="@+id/timeBar"
+                android:max="4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
+                />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/socialPrank"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sociability" />
+                android:textSize="18sp"
+                android:text="\n\nSociability - 1"
+                android:textColor="@color/fontColor"/>
 
-            <RatingBar
-                android:id="@+id/ratingBar3"
+            <SeekBar
+                android:id="@+id/socialBar"
+                android:max="4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
+                />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/soundPrank"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sound Levels" />
+                android:textSize="18sp"
+                android:text="\n\nSound Levels - 1"
+                android:textColor="@color/fontColor"/>
 
-            <RatingBar
-                android:id="@+id/ratingBar4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView17"
+            <SeekBar
+                android:id="@+id/soundBar"
+                android:max="4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
-
-            <RatingBar
-                android:id="@+id/ratingBar5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
+                />
 
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Which is your most important attribute in a potential roommate?" />
+                android:textSize="20sp"
+                android:text="\n\nOrder the attributes from most important to least"
+                android:textColor="@color/fontColor"/>
 
             <Spinner
-                android:id="@+id/spinner5"
+                android:id="@+id/firstPlace"
                 android:layout_width="match_parent"
+                android:background="@color/boxBack"
                 android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/button15"
+            <TextView
+                android:id="@+id/spacer1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="upProfileBack"
-                android:text="Update"
+                android:textSize="5sp"
+                android:text=" "/>
+            <Spinner
+                android:id="@+id/secondPlace"
+                android:layout_width="match_parent"
+                android:background="@color/boxBack"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/spacer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="5sp"
+                android:text=" "/>
+            <Spinner
+                android:id="@+id/thirdPlace"
+                android:layout_width="match_parent"
+                android:background="@color/boxBack"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/spacer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="5sp"
+                android:text=" "/>
+            <Spinner
+                android:id="@+id/fourthPlace"
+                android:layout_width="match_parent"
+                android:background="@color/boxBack"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/spacer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="5sp"
+                android:text=" "/>
+            <TextView
+                android:id="@+id/profileErrors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="\n\n" />
+
+            <Button
+                android:id="@+id/finish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Finish"
                 tools:layout_editor_absoluteX="161dp"
                 tools:layout_editor_absoluteY="595dp" />
-
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>

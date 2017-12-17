@@ -30,13 +30,14 @@ public class RegProfile extends AppCompatActivity {
     static int USER_Sound;
     static int USER_Social;
 
-
+    DBHandler db = new DBHandler(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reg_profile);
         //seek bar captures
+
 
 
         cleanSeekbar = (SeekBar) findViewById(R.id.cleanBar);
@@ -75,6 +76,7 @@ public class RegProfile extends AppCompatActivity {
                 // TODO Auto-generated method stub
             }
             public void onStopTrackingTouch(SeekBar seekBar) {
+
                 timeProgressTextView.setText("\n\nHours of Activity - "+(progressChangedValue+1));
                 USER_Time = progressChangedValue+1;
             }
@@ -95,6 +97,7 @@ public class RegProfile extends AppCompatActivity {
                 // TODO Auto-generated method stub
             }
             public void onStopTrackingTouch(SeekBar seekBar) {
+
                 socialProgressTextView.setText("\n\nSociability - "+(progressChangedValue+1));
                 USER_Social = progressChangedValue+1;
             }
@@ -235,7 +238,7 @@ public class RegProfile extends AppCompatActivity {
             //add user to db
             DBHandler db = new DBHandler(this);
             user.setPrank(db.prankConversion(first_String,second_String,third_String,fourth_String));
-            Log.d("User INjectd:", user.toString());
+            Log.d("User Injectd:", user.toString());
             db.insertNewUser(user);
 
             //user was inserted into database, make sure its there before continuing

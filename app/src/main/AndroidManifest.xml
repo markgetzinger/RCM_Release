@@ -12,19 +12,21 @@
         <activity android:name=".Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".CheckMatch" />
         <activity android:name=".LoginLandingMenu" />
         <activity android:name=".RegLand" />
-        <activity android:name=".RegProfile" />
+        <activity android:name=".RegProfile"
+            android:windowSoftInputMode="adjustNothing"/>
         <activity android:name=".RoomCalendar" />
         <activity android:name=".RoomChat" />
         <activity android:name=".RoomTools" />
         <activity android:name=".UpdateProfile" />
-        <activity android:name=".UserSearch"></activity>
+        <activity android:name=".UserSearch">
+
+        </activity>
     </application>
 
 </manifest>
